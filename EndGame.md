@@ -45,6 +45,10 @@ pip install basicsr
 ```
 # File: basicsr/data/degradations.py
 from torchvision.transforms.functional_tensor import rgb_to_grayscale
+
+# File: basicsr/data/degradations.py
+from torchvision.transforms.functional import rgb_to_grayscale
+
 ```
 
 
@@ -59,6 +63,7 @@ print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N
 
 Check other dependencies
 ```
-python -c "import imageio, matplotlib, numpy, cv2, pandas, scipy, skimage, tqdm; print('All good!')"
+python -c 'import imageio, matplotlib, numpy, cv2, pandas, scipy, skimage, tqdm; print("All good!")'
+
 ```
 
